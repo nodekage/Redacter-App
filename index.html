@@ -1,19 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Name of chosen challenge</title>
-
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;600;900&display=swap" rel="stylesheet">
+  <title>Redactr</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    
-    <h2>make some magic here!!</h2>
 
-    <!-- // ============= EEND DO NOT EDIT ============== // -->
-    <script src="index.mjs" type="module"></script>
-    <!-- // ============= EEND DO NOT EDIT ============== // -->
+<body>
+  <section class='wrapper'>
+    <section class="content">
+      <header>
+        <h1>Redactr</h1>
+        <span><i class="fa-solid fa-bars"></i></span>
+      </header>
+      <form>
+        <div class="text-areas">
+          <div class="text-container paste-area">
+            <textarea
+              placeholder="Redactr will remove a specified word or string of text from your texts and replace it with asteriks, another letter, word, or string of texts. Start by typing or pasting something here, then click the redact button">
+      </textarea>
+            <p class='instruction'>Redact selected texts with *</p>
+          </div>
+          <div class="text-container">
+            <textarea>
+      </textarea>
+          </div>
+        </div>
+        <div class="btns">
+          <button>Enter words to be redacted</button>
+          <button>Enter replacement text</button>
+          <button class='redact-btn'>Redact</button>
+        </div>
+      </form>
+    </section>
+  </section>
+
+  <!-- // ============= EEND DO NOT EDIT ============== // -->
+  <script src="index.mjs" type="module"></script>
+  <!-- // ============= EEND DO NOT EDIT ============== // -->
 </body>
+
 </html>

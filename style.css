@@ -1,0 +1,107 @@
+*{
+  margin:0%;
+  padding:0;
+  box-sizing: border-box;
+}
+body{
+  background: blue;
+}
+html{
+  font-family: 'Inter', sans-serif;
+}
+.wrapper{
+  margin-top: 1.5rem;
+  padding: 1.5rem 1.5rem 0 1.5rem;
+}
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header h1{
+  font-weight:900;
+  font-size: 2rem
+}
+.content {
+  padding: 1rem;
+  background-color: white;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+.text-container{
+  display: flex;
+  justify-content: center;
+}
+textarea{
+  width: 90%;
+  height: 15rem;
+  margin:1rem 0;
+  box-shadow:1px 2px 8px -1px rgba(0,0,0,0.62);
+  border: 0;
+  padding: .5rem;
+  font-family: inherit;
+}
+.paste-area{
+  position: relative
+}
+textarea::placeholder{
+  color: #8a8585;
+}
+.instruction{
+  color: blue;
+ position: absolute;
+  top: 80%;
+  left:10%;
+  z-index: 2;
+}
+.btns{
+  display:flex;
+  flex-direction: column;
+  margin-top: 1.5rem;
+  margin-left: 2rem
+}
+.btns button{
+  padding:1rem 1.5rem;
+  margin-bottom: 1rem;
+  background-color: white;
+  border:none;
+  box-shadow:1px 2px 4px -1px rgba(0,0,0,0.62);
+  color:  #8a8585;
+}
+.btns .redact-btn { 
+  background-color: blue;
+  color:white;
+  border-radius: .5rem;
+}
+@media (min-width: 700px){
+  header{
+    padding: 2.5rem;
+  }
+  .wrapper{
+  margin-top: 2rem;
+  padding: 4rem 4rem 0 4rem;
+}
+ .text-areas{
+   display: flex;
+   justify-content: space-between;
+   margin-top:2rem
+ }
+textarea{
+  height: 25rem;
+}
+  .text-container{
+    width: 100%;
+  }
+  .btns{
+    flex-direction: row;
+    gap: 1.5rem
+  }
+  .btns .redact-btn{
+    width: 10rem;
+    font-weight:600;
+    
+  }
+  .instruction{
+    top:85%
+  }
+}
