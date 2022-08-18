@@ -5,13 +5,10 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
-    />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;600;900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;600;900&display=swap" rel="stylesheet">
   <title>Redactr</title>
   <link rel="stylesheet" href="style.css">
 </head>
@@ -26,20 +23,26 @@
       <form>
         <div class="text-areas">
           <div class="text-container paste-area">
-            <textarea
+            <textarea id="input-textarea"
               placeholder="Redactr will remove a specified word or string of text from your texts and replace it with asteriks, another letter, word, or string of texts. Start by typing or pasting something here, then click the redact button">
       </textarea>
             <p class='instruction'>Redact selected texts with *</p>
           </div>
           <div class="text-container">
-            <textarea>
+            <textarea id="output-textarea">
       </textarea>
+            <div class='details'>
+              <span id="time_taken">Time taken: </span>
+              <span id="chars_scramb">Total characters scrambled:</span>
+              <span id="words_scan">Words scanned:</span>
+              <span id="total_chars">Total characters:</span>     
+            </div>
           </div>
         </div>
         <div class="btns">
-          <button>Enter words to be redacted</button>
-          <button>Enter replacement text</button>
-          <button class='redact-btn'>Redact</button>
+          <input id="replace-text" type="text" placeholder="Enter words to be redacted"/>
+          <input id = "replace-alt" type="text" placeholder="Enter replacement text"/>
+          <button id="redact-btn" class='redact-btn'>Redact</button>
         </div>
       </form>
     </section>
@@ -47,6 +50,7 @@
 
   <!-- // ============= EEND DO NOT EDIT ============== // -->
   <script src="index.mjs" type="module"></script>
+  <script src="index.js"></script>
   <!-- // ============= EEND DO NOT EDIT ============== // -->
 </body>
 

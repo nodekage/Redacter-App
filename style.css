@@ -60,7 +60,7 @@ textarea::placeholder{
   margin-top: 1.5rem;
   margin-left: 2rem
 }
-.btns button{
+.btns input{
   padding:1rem 1.5rem;
   margin-bottom: 1rem;
   background-color: white;
@@ -104,4 +104,14 @@ textarea{
   .instruction{
     top:85%
   }
+}
+.details{
+  display: flex;
+  flex-wrap: wrap;
+  position:absolute;
+  bottom:15%;
+}
+.details span{
+  width: 50%;
+  margin-bottom: .3rem;
 }
