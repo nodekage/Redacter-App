@@ -110,8 +110,10 @@ textarea{
   flex-wrap: wrap;
   position:absolute;
   bottom:15%;
+  width:40%;
+  margin: 0 auto;
 }
 .details span{
-  width: 30%;
+  width: 45%;
   margin-bottom: .3rem;
 }
