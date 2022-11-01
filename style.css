@@ -73,6 +73,12 @@ textarea::placeholder{
   color:white;
   border-radius: .5rem;
 }
+@media (min-width: 500px){
+  .details{
+    bottom:5%;
+    margin: 0 auto;
+  }
+}
 @media (min-width: 700px){
   header{
     padding: 2.5rem;
@@ -91,6 +97,7 @@ textarea{
 }
   .text-container{
     width: 100%;
+    position:relative;
   }
   .btns{
     flex-direction: row;
@@ -109,11 +116,13 @@ textarea{
   display: flex;
   flex-wrap: wrap;
   position:absolute;
-  bottom:15%;
-  width:40%;
+  bottom:10%;
+  width:60%;
   margin: 0 auto;
+  border:1px solid red
 }
 .details span{
   width: 45%;
   margin-bottom: .3rem;
 }
+
